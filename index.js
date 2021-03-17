@@ -44,6 +44,9 @@ bot.on('message', message => {
 */
 
   // quoi feur
+  // send "feur" if the message ends with "quoi"
+  // Explaination : That's a french joke
+  //                "Coiffeur" is a hairdresser in french and "quoi feur" has the name pronunciation
   if (msgWoutPunc.endsWith('quoi')) {
     message.channel.send('feur')
   }
