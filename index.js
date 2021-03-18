@@ -84,7 +84,7 @@ bot.on('message', message => {
     bot.commands.get(command).execute(message, args)
   } catch (e) {
     console.error(e)
-    message.reply('Une erreur s\'est produite.')
+    message.reply('An error has occured')
   }
 })
 
