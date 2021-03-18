@@ -32,8 +32,8 @@ bot.on('message', message => {
 
   if (message.author.bot) return
 
-  // get the content of the message without the punctuation
-  var msgWoutPunc = message.content.replace(/[^a-zA-Z ]+/g, '').replace('/ {2,}/',' ')
+  // get the content of the message without the punctuation and replace capital letters by normal letters
+  var msgWoutPunc = message.content.replace(/[^a-zA-Z ]+/g, '').replace('/ {2,}/',' ').toLowerCase()
   while (msgWoutPunc.endsWith(' ')) {
     msgWoutPunc = msgWoutPunc.slice(0, -1)
   }
@@ -44,7 +44,7 @@ bot.on('message', message => {
 */
 
 
-/*    FRENCH PUNS   */
+/*    PUNS   */
 
   // quoi feur
   // send "feur" if the message ends with "quoi"
@@ -61,6 +61,11 @@ bot.on('message', message => {
   if (msgWoutPunc.endsWith('oui')) {
     message.channel.send('stiti')
   }
+
+  // ah b
+  // send "b" if the message ends with "ah"
+  // Explaination : "Ah" has the sound of the letter A in french so why not send B ?
+  if (msgWoutPunc.endsWith(''))
 
 
 
