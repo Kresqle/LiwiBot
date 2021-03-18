@@ -19,32 +19,28 @@ for (const file of commandFiles) {
   bot.commands.set(command.name, command)
 }
 
-
 /*
           MESSAGE EVENT
 */
 
 bot.on('message', message => {
-
-/*
+  /*
           SETUP
-*/
+  */
 
   if (message.author.bot) return
 
   // get the content of the message without the punctuation and replace capital letters by normal letters
-  var msgWoutPunc = message.content.replace(/[^a-zA-Z ]+/g, '').replace('/ {2,}/',' ').toLowerCase()
+  var msgWoutPunc = message.content.replace(/[^a-zA-Z ]+/g, '').replace('/ {2,}/', ' ').toLowerCase()
   while (msgWoutPunc.endsWith(' ')) {
     msgWoutPunc = msgWoutPunc.slice(0, -1)
   }
 
-
-/*
+  /*
           USELESS THINGS
-*/
+  */
 
-
-/*    PUNS   */
+  /*    PUNS   */
 
   // quoi feur
   // send "feur" if the message ends with "quoi"
@@ -69,11 +65,9 @@ bot.on('message', message => {
     message.channel.send('b')
   }
 
-
-
-/*
+  /*
           COMMANDS
-*/
+  */
 
   // check if the message starts with the prefix
   if (!message.content.startsWith(prefix)) return
@@ -92,9 +86,7 @@ bot.on('message', message => {
     console.error(e)
     message.reply('Une erreur s\'est produite.')
   }
-
 })
-
 
 /*
           ONLINE EVENT
