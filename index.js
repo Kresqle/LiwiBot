@@ -43,6 +43,9 @@ bot.on('message', message => {
           USELESS THINGS
 */
 
+
+/*    FRENCH PUNS   */
+
   // quoi feur
   // send "feur" if the message ends with "quoi"
   // Explaination : That's a french joke
@@ -50,6 +53,15 @@ bot.on('message', message => {
   if (msgWoutPunc.endsWith('quoi')) {
     message.channel.send('feur')
   }
+
+  // oui stiti
+  // send "stiti" if the message ends with "oui"
+  // Explaination : That's another french joke
+  //                "Ouistiti" is a marmoset in french
+  if (msgWoutPunc.endsWith('oui')) {
+    message.channel.send('stiti')
+  }
+
 
 
 /*
