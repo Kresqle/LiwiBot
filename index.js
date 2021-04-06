@@ -113,4 +113,4 @@ bot.on('ready', () => {
 })
 
 // log the bot
-bot.login(token)
+bot.login(process.env.TOKEN)
