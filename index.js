@@ -5,7 +5,8 @@
 // modules
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const { prefix, token } = require('./config.json')
+// const { prefix, token } = require('./config.json')
+const prefix = "*"
 const fs = require('fs')
 
 // add commands to the bot for each js file in the commands folder
