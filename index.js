@@ -70,7 +70,7 @@ bot.on('message', message => {
   // send "deux" if the message ends with "hein"
   // Explaination : "Hein" has the sound of "1" in french and "Deux" is the number 2 in french
   //                So 1 -> 2
-  if (msgWoutPunc.endsWith('hein')) {
+  if (msgWoutPunc.endsWith('in')) {
     message.channel.send('deux')
   }
 
