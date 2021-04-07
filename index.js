@@ -60,9 +60,9 @@ bot.on('message', message => {
   }
 
   // ah b
-  // send "b" if the message ends with "ah"
-  // Explaination : "Ah" has the sound of the letter A in french so why not send B ?
-  if (msgWoutPunc.endsWith('ah')) {
+  // send "b" if the message ends with "ah" or "ah"
+  // Explaination : "Ah" (and "a") has the sound of the letter A in french so why not send B ?
+  if (msgWoutPunc.endsWith('ah') || msgWoutPunc.endsWith('a')) {
     message.channel.send('b')
   }
 
