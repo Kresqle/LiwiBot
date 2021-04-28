@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "fs": "^0.0.1-security",
     "discord": "^0.8.2",
-    "discord.js": "^12.5.1"
+    "discord-reply": "^0.1.2",
+    "discord.js": "^12.5.1",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {},
   "scripts": {
